@@ -77,6 +77,12 @@
     <Compile Include="User_Controls\UC_CaLamViecTrongNgay.Designer.cs">
       <DependentUpon>UC_CaLamViecTrongNgay.cs</DependentUpon>
     </Compile>
+    <Compile Include="User_Controls\UC_DoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\UC_DoiMatKhau.Designer.cs">
+      <DependentUpon>UC_DoiMatKhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_Controls\UC_KiemTraDatMon.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </Compile>
     <EmbeddedResource Include="User_Controls\UC_CaLamViecTrongNgay.resx">
       <DependentUpon>UC_CaLamViecTrongNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\UC_DoiMatKhau.resx">
+      <DependentUpon>UC_DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\UC_KiemTraDatMon.resx">
       <DependentUpon>UC_KiemTraDatMon.cs</DependentUpon>
