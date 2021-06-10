@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\QLQuanCafe",
+    "\\QLQuanCafe\\QLQuanCafe"
   ],
-  "SelectedNode": "\\QLQuanCafe.sln",
+  "SelectedNode": "\\QLQuanCafe\\QLQuanCafe\\DangNhap.cs",
   "PreviewInSolutionExplorer": false
 }
