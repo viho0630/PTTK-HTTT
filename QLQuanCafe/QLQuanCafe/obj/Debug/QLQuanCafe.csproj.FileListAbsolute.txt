@@ -1,0 +1,56 @@
+D:\Github\QLQuanCafe\bin\Debug\QLQuanCafe.exe
+D:\Github\QLQuanCafe\bin\Debug\QLQuanCafe.pdb
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.AssemblyReference.cache
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.Login.resources
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.Properties.Resources.resources
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.GenerateResource.cache
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.CoreCompileInputs.cache
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.exe
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.pdb
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.frmKetNoi.resources
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.Main.resources
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\bin\Debug\QLQuanCafe.exe
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\bin\Debug\QLQuanCafe.pdb
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.frmKetNoi.resources
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.Login.resources
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.Main.resources
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.Properties.Resources.resources
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.CT_HoaDon.resources
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_MenuChoKhach.resources
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_ThemSuaMon.resources
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAn.resources
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAnNho.resources
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.GenerateResource.cache
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.CoreCompileInputs.cache
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.exe
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.pdb
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_KiemTraDatMon.resources
+E:\Uni\PTTK HTTT\quancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAnXacNhan.resources
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_KiemTraDatMon.resources
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_MenuChoKhach.resources
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_NhanVien.resources
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAnXacNhan.resources
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_ThemSuaMon.resources
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAn.resources
+D:\Github\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAnNho.resources
+E:\qlquancafe\QLQuanCafe\bin\Debug\QLQuanCafe.exe
+E:\qlquancafe\QLQuanCafe\bin\Debug\QLQuanCafe.pdb
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.frmKetNoi.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.Login.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.Main.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.Properties.Resources.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_CaLamViecTrongNgay.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_KiemTraDatMon.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_MenuChoKhach.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_MenuQL.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_NhanVien.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAnXacNhan.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_ThemSuaMon.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAn.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAnNho.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.GenerateResource.cache
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.CoreCompileInputs.cache
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.exe
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.pdb
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.DangNhap.resources
+E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_ThemNVLamViec.resources
