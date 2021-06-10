@@ -27,5 +27,12 @@ namespace QLQuanCafe
         {
             Application.Exit();
         }
+
+        private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            User_Controls.UC_NhanVien nv = new User_Controls.UC_NhanVien();
+            pnLoad.Controls.Clear();
+            pnLoad.Controls.Add(nv);
+        }
     }
 }

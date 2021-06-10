@@ -32,18 +32,27 @@ namespace QLQuanCafe
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnLoad = new System.Windows.Forms.Panel();
+            this.nhânViênToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nhânViênToolStripMenuItem});
+            this.nhânViênToolStripMenuItem,
+            this.nhânViênToolStripMenuItem1,
+            this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(637, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // nhânViênToolStripMenuItem
+            // 
+            this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
+            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(12, 20);
             // 
             // pnLoad
             // 
@@ -52,6 +61,19 @@ namespace QLQuanCafe
             this.pnLoad.Name = "pnLoad";
             this.pnLoad.Size = new System.Drawing.Size(637, 349);
             this.pnLoad.TabIndex = 1;
+            // 
+            // nhânViênToolStripMenuItem1
+            // 
+            this.nhânViênToolStripMenuItem1.Name = "nhânViênToolStripMenuItem1";
+            this.nhânViênToolStripMenuItem1.Size = new System.Drawing.Size(74, 20);
+            this.nhânViênToolStripMenuItem1.Text = "Nhân Viên";
+            this.nhânViênToolStripMenuItem1.Click += new System.EventHandler(this.nhânViênToolStripMenuItem1_Click);
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem.Text = "Menu";
             // 
             // Main
             // 
@@ -78,5 +100,7 @@ namespace QLQuanCafe
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem nhânViênToolStripMenuItem;
         private System.Windows.Forms.Panel pnLoad;
+        private System.Windows.Forms.ToolStripMenuItem nhânViênToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
     }
 }

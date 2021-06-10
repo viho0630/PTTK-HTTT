@@ -98,6 +98,9 @@
     <Compile Include="User_Controls\UC_NhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="User_Controls\UC_NhanVien.Designer.cs">
+      <DependentUpon>UC_NhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_Controls\UC_ThemNVLamViec.cs">
       <SubType>UserControl</SubType>
     </Compile>
