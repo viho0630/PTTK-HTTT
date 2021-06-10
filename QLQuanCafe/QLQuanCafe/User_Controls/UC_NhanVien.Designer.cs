@@ -61,6 +61,8 @@ namespace QLQuanCafe.User_Controls
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cboChucVu = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Luoi_DSNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcHinhAnh)).BeginInit();
             this.SuspendLayout();
@@ -94,7 +96,7 @@ namespace QLQuanCafe.User_Controls
             this.SDT});
             this.Luoi_DSNhanVien.Location = new System.Drawing.Point(29, 106);
             this.Luoi_DSNhanVien.Name = "Luoi_DSNhanVien";
-            this.Luoi_DSNhanVien.Size = new System.Drawing.Size(409, 212);
+            this.Luoi_DSNhanVien.Size = new System.Drawing.Size(409, 246);
             this.Luoi_DSNhanVien.TabIndex = 147;
             this.Luoi_DSNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Luoi_DSNhanVien_CellClick);
             // 
@@ -354,10 +356,32 @@ namespace QLQuanCafe.User_Controls
             this.label1.TabIndex = 122;
             this.label1.Text = "THÔNG TIN CHI TIẾT";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(496, 335);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 13);
+            this.label7.TabIndex = 151;
+            this.label7.Text = "Chức vụ";
+            // 
+            // cboChucVu
+            // 
+            this.cboChucVu.FormattingEnabled = true;
+            this.cboChucVu.Items.AddRange(new object[] {
+            "Nhân viên",
+            "Quản lý"});
+            this.cboChucVu.Location = new System.Drawing.Point(561, 331);
+            this.cboChucVu.Name = "cboChucVu";
+            this.cboChucVu.Size = new System.Drawing.Size(134, 21);
+            this.cboChucVu.TabIndex = 152;
+            // 
             // UC_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cboChucVu);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Luoi_DSNhanVien);
@@ -387,7 +411,7 @@ namespace QLQuanCafe.User_Controls
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UC_NhanVien";
-            this.Size = new System.Drawing.Size(882, 347);
+            this.Size = new System.Drawing.Size(882, 379);
             this.Load += new System.EventHandler(this.UC_NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Luoi_DSNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcHinhAnh)).EndInit();
@@ -430,5 +454,7 @@ namespace QLQuanCafe.User_Controls
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cboChucVu;
     }
 }

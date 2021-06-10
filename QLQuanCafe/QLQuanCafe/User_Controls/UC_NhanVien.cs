@@ -33,10 +33,12 @@ namespace QLQuanCafe.User_Controls
             string sql = "SELECT MaNV, TenNV, SDT, NgaySinh FROM NHANVIEN";
             dt_nhanvien = Dataprovider.getDatatTable(sql);
             Luoi_DSNhanVien.DataSource = dt_nhanvien;
+
         }
         private void UC_NhanVien_Load(object sender, EventArgs e)
         {
             load();
+            txtMaNV.Enabled = false;
         }
 
         private void pcHinhAnh_Click(object sender, EventArgs e)
@@ -59,9 +61,11 @@ namespace QLQuanCafe.User_Controls
             btcapnhat.Enabled = false;
             btxoa.Enabled = false;
             btexport.Enabled = false;
+            txtMaNV.Enabled = true;
             if (btThem_Luu.Text == "Thêm")
             {
                 btThem_Luu.Text = "Lưu";
+                txtMaNV.Enabled = true;
                 ClearData();
             }
             else
@@ -69,6 +73,7 @@ namespace QLQuanCafe.User_Controls
                 btThem_Luu.Text = "Thêm";
                 btcapnhat.Enabled = true;
                 btxoa.Enabled = true;
+                txtMaNV.Enabled = true;
                 if (!string.IsNullOrEmpty(txtMaNV.Text) &&
                     !string.IsNullOrEmpty(txtTenNV.Text) &&
                     !string.IsNullOrEmpty(txtDiaChi.Text) &&
@@ -82,6 +87,17 @@ namespace QLQuanCafe.User_Controls
                         gt = "Nữ";
                     else
                         gt = "Nam";
+
+                    string chucvu = "";
+                    if (cboChucVu.SelectedIndex == 0)
+                    {
+                        chucvu = "nv";
+                    }
+                    else
+                    {
+                        chucvu = "admin";
+                    }
+
                     dr_nhanvien["MaNV"] = txtMaNV.Text.Trim();
                     dr_nhanvien["TenNV"] = txtTenNV.Text.Trim();
                     dr_nhanvien["NgaySinh"] = dtNgaySinh.Value.Date;
@@ -91,6 +107,7 @@ namespace QLQuanCafe.User_Controls
                     dr_nhanvien["MatKhau"] = txtMaNV.Text.Trim();
                     dr_nhanvien["SDT"] = txtSdt.Text.Trim();
                     dr_nhanvien["NgayVaoLam"] = dtNgayVaoLam.Value.Date;
+                    dr_nhanvien["PhanQuyen"] = chucvu;
 
                     if (pcHinhAnh == null)
                     {
@@ -126,10 +143,102 @@ namespace QLQuanCafe.User_Controls
         private void btcapnhat_Click(object sender, EventArgs e)
         {
 
+            btThem_Luu.Enabled = false;
+            btxoa.Enabled = false;
+            btexport.Enabled = false;
+            txtMaNV.Enabled = false;
+            if (btcapnhat.Text == "Cập nhật")
+            {
+                btcapnhat.Text = "Lưu";
+                ClearData();
+            }
+            else
+            {
+                btcapnhat.Text = "Cập nhật";
+                btexport.Enabled = true;
+                btxoa.Enabled = true;
+                if (!string.IsNullOrEmpty(txtMaNV.Text) &&
+                    !string.IsNullOrEmpty(txtTenNV.Text) &&
+                    !string.IsNullOrEmpty(txtDiaChi.Text) &&
+                    !string.IsNullOrEmpty(txtSdt.Text) &&
+                    !string.IsNullOrEmpty(txtMucLuong.Text) && (!rbNam.Checked || !rbNu.Checked))
+                {
+
+                    DataGridViewRow dt_nv = Luoi_DSNhanVien.CurrentRow;
+                    DataRow dr_nhanvien = ((DataRowView)dt_nv.DataBoundItem).Row;
+
+                    string gt;
+                    if (rbNu.Checked == true)
+                        gt = "Nữ";
+                    else
+                        gt = "Nam";
+
+                    string chucvu = "";
+                    if (cboChucVu.SelectedIndex == 0)
+                    {
+                        chucvu = "nv";
+                    }
+                    else
+                    {
+                        chucvu = "admin";
+                    }
+
+                    //dr_nhanvien["MaNV"] = txtMaNV.Text.Trim();
+                    //dr_nhanvien["TenNV"] = txtTenNV.Text.Trim();
+                    //dr_nhanvien["NgaySinh"] = dtNgaySinh.Value.Date;
+                    //dr_nhanvien["GioiTinh"] = gt;
+                    //dr_nhanvien["DiaChi"] = txtDiaChi.Text.Trim();
+                    //dr_nhanvien["MucLuong"] = txtMucLuong.Text.Trim();
+                    //dr_nhanvien["MatKhau"] = txtMaNV.Text.Trim();
+                    //dr_nhanvien["SDT"] = txtSdt.Text.Trim();
+                    //dr_nhanvien["NgayVaoLam"] = dtNgayVaoLam.Value.Date;
+                    //dr_nhanvien["PhanQuyen"] = chucvu;
+                    MemoryStream ms = new MemoryStream();
+                    byte[] bytBLOBData = new byte[ms.Length];
+                    //if (pcHinhAnh == null)
+                    //{
+                    //    MessageBox.Show("Bạn chưa chọn hình!");
+                    //}
+                    //else
+                    //{
+
+                    //    pcHinhAnh.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    //    bytBLOBData = new byte[ms.Length];
+                    //    ms.Position = 0;
+                    //    ms.Read(bytBLOBData, 0, Convert.ToInt32(ms.Length));
+                    //    //dr_nhanvien["HinhAnh"] = bytBLOBData;
+                    //}
+
+                    string update = "UPDATE NHANVIEN SET TenNV = N'" + txtTenNV.Text.Trim() + "',NgaySinh ='" + dtNgaySinh.Value.Date + "',GioiTinh ='" + gt + "',SDT ='" + txtSdt.Text.Trim() + "',DiaChi ='" + txtDiaChi.Text.Trim() + "',PhanQuyen ='" + chucvu + "',MucLuong ='" + txtMucLuong.Text.Trim() + "',NgayVaoLam ='" + dtNgayVaoLam.Value.Date + "' WHERE MaNV ='" + txtMaNV.Text.Trim() + "'";
+                    DataTable dt = new DataTable();
+                    dt = Dataprovider.getDatatTable(update);
+                    int i = Dataprovider.Update(dt);
+
+                    load();
+                    if (i == 1)
+                    {
+                        MessageBox.Show("Cập nhật thông tin nhân viên thành công!");
+                    }
+                    else
+                        MessageBox.Show("Thất bại!");
+                }
+            }
         }
 
         private void btxoa_Click(object sender, EventArgs e)
         {
+            string sql = "DELETE FROM NHANVIEN WHERE MaNV = '" + txtMaNV.Text.Trim() + "'";
+            int i = Dataprovider.Delete_Dong(sql);
+
+            load();
+            if (i == 0)
+            {
+                MessageBox.Show("Xóa nhân viên thất bại!");
+            }
+            else
+            {
+                MessageBox.Show("Đá đít nhân viên thành công!");
+            }
 
         }
 
