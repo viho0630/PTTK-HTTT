@@ -164,8 +164,8 @@ namespace QLQuanCafe.User_Controls
                     !string.IsNullOrEmpty(txtMucLuong.Text) && (!rbNam.Checked || !rbNu.Checked))
                 {
 
-                    DataGridViewRow dt_nv = Luoi_DSNhanVien.CurrentRow;
-                    DataRow dr_nhanvien = ((DataRowView)dt_nv.DataBoundItem).Row;
+                    DataTable dt_nv = Dataprovider.DocCauTruc("NHANVIEN");
+                    DataRow dr_nhanvien = dt_nv.NewRow();
 
                     string gt;
                     if (rbNu.Checked == true)
@@ -183,33 +183,7 @@ namespace QLQuanCafe.User_Controls
                         chucvu = "admin";
                     }
 
-                    //dr_nhanvien["MaNV"] = txtMaNV.Text.Trim();
-                    //dr_nhanvien["TenNV"] = txtTenNV.Text.Trim();
-                    //dr_nhanvien["NgaySinh"] = dtNgaySinh.Value.Date;
-                    //dr_nhanvien["GioiTinh"] = gt;
-                    //dr_nhanvien["DiaChi"] = txtDiaChi.Text.Trim();
-                    //dr_nhanvien["MucLuong"] = txtMucLuong.Text.Trim();
-                    //dr_nhanvien["MatKhau"] = txtMaNV.Text.Trim();
-                    //dr_nhanvien["SDT"] = txtSdt.Text.Trim();
-                    //dr_nhanvien["NgayVaoLam"] = dtNgayVaoLam.Value.Date;
-                    //dr_nhanvien["PhanQuyen"] = chucvu;
-                    MemoryStream ms = new MemoryStream();
-                    byte[] bytBLOBData = new byte[ms.Length];
-                    //if (pcHinhAnh == null)
-                    //{
-                    //    MessageBox.Show("Bạn chưa chọn hình!");
-                    //}
-                    //else
-                    //{
-
-                    //    pcHinhAnh.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    //    bytBLOBData = new byte[ms.Length];
-                    //    ms.Position = 0;
-                    //    ms.Read(bytBLOBData, 0, Convert.ToInt32(ms.Length));
-                    //    //dr_nhanvien["HinhAnh"] = bytBLOBData;
-                    //}
-
-                    string update = "UPDATE NHANVIEN SET TenNV = N'" + txtTenNV.Text.Trim() + "',NgaySinh ='" + dtNgaySinh.Value.Date + "',GioiTinh ='" + gt + "',SDT ='" + txtSdt.Text.Trim() + "',DiaChi ='" + txtDiaChi.Text.Trim() + "',PhanQuyen ='" + chucvu + "',MucLuong ='" + txtMucLuong.Text.Trim() + "',NgayVaoLam ='" + dtNgayVaoLam.Value.Date + "' WHERE MaNV ='" + txtMaNV.Text.Trim() + "'";
+                    string update = "UPDATE NHANVIEN SET TenNV = N'" + txtTenNV.Text.Trim() + "',NgaySinh ='" + dtNgaySinh.Value.Date + "',GioiTinh ='" + gt + "',SDT ='" + txtSdt.Text.Trim() + "',DiaChi = N'" + txtDiaChi.Text.Trim() + "',PhanQuyen ='" + chucvu + "',MucLuong ='" + txtMucLuong.Text.Trim() + "',NgayVaoLam ='" + dtNgayVaoLam.Value.Date + "' WHERE MaNV ='" + txtMaNV.Text.Trim() + "'";
                     DataTable dt = new DataTable();
                     dt = Dataprovider.getDatatTable(update);
                     int i = Dataprovider.Update(dt);
@@ -227,8 +201,16 @@ namespace QLQuanCafe.User_Controls
 
         private void btxoa_Click(object sender, EventArgs e)
         {
-            string sql = "DELETE FROM NHANVIEN WHERE MaNV = '" + txtMaNV.Text.Trim() + "'";
-            int i = Dataprovider.Delete_Dong(sql);
+            int i = 0;
+            try
+            {
+                string sql = "DELETE FROM NHANVIEN WHERE MaNV = '" + txtMaNV.Text.Trim() + "'";
+                i = Dataprovider.Delete_Dong(sql);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Lỗi!");
+            }
 
             load();
             if (i == 0)
@@ -249,7 +231,18 @@ namespace QLQuanCafe.User_Controls
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                string query = string.Format("SELECT MaNV, TenNV, SDT, NgaySinh FROM NHANVIEN WHERE (dbo.searchFn(TenNV) LIKE N'%' + dbo.searchFn(N'{0}') + '%') OR" +
+                " (dbo.searchFn(MaNV) LIKE N'%' + dbo.searchFn(N'{0}') + '%') OR" +
+                " (dbo.searchFn(SDT) LIKE N'%' + dbo.searchFn(N'{0}') + '%') OR (dbo.searchFn(NgaySinh) LIKE N'%' + dbo.searchFn(N'{0}') + '%')", txtTimKiem.Text.Trim());
+                DataTable dt_ex = Dataprovider.getDatatTable(query);
+                Luoi_DSNhanVien.DataSource = dt_ex;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Lỗi tìm kiếm!");
+            }
         }
 
         private void CT_NhanVien_KeyPress(object sender, KeyPressEventArgs e)
@@ -273,6 +266,16 @@ namespace QLQuanCafe.User_Controls
                 rbNam.Checked = true;
             else
                 rbNu.Checked = true;
+
+            
+            if (dt_nhanvien.Rows[0][6].ToString().Trim() == "nv")
+            {
+                cboChucVu.SelectedIndex = 0;
+            }
+            else
+            {
+                cboChucVu.SelectedIndex = 1;
+            }
 
             txtSdt.Text = dt_nhanvien.Rows[0][4].ToString();
             txtDiaChi.Text = dt_nhanvien.Rows[0][5].ToString();
