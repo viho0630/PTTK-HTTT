@@ -111,10 +111,11 @@ namespace QLQuanCafe.User_Controls
          this.btLuu.Text = "Lưu";
          this.btLuu.UseVisualStyleBackColor = false;
          // 
-         // UC_ThemMon
+         // UC_ThemSuaMon
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
          this.Controls.Add(this.btLuu);
          this.Controls.Add(this.txtGia);
          this.Controls.Add(this.lbGia);
@@ -122,7 +123,7 @@ namespace QLQuanCafe.User_Controls
          this.Controls.Add(this.lbTenMon);
          this.Controls.Add(this.btTaiAnhLen);
          this.Controls.Add(this.pictureBox1);
-         this.Name = "UC_ThemMon";
+         this.Name = "UC_ThemSuaMon";
          this.Size = new System.Drawing.Size(230, 423);
          ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
          this.ResumeLayout(false);

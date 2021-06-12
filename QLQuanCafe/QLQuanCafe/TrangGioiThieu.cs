@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QLQuanCafe.User_Controls
+namespace QLQuanCafe
 {
-   public partial class UC_KiemTraDatMon : UserControl
+   public partial class TrangGioiThieu : Form
    {
-      public UC_KiemTraDatMon()
+      public TrangGioiThieu()
       {
          InitializeComponent();
       }

@@ -71,29 +71,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User_Controls\UC_CaLamViecTrongNgay.cs">
+    <Compile Include="TrangChoNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangChoNhanVien.Designer.cs">
+      <DependentUpon>TrangChoNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrangGioiThieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangGioiThieu.Designer.cs">
+      <DependentUpon>TrangGioiThieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\UC_BaoCao.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User_Controls\UC_CaLamViecTrongNgay.Designer.cs">
-      <DependentUpon>UC_CaLamViecTrongNgay.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User_Controls\UC_KiemTraDatMon.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User_Controls\UC_KiemTraDatMon.Designer.cs">
-      <DependentUpon>UC_KiemTraDatMon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User_Controls\UC_MenuChoKhach.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User_Controls\UC_MenuChoKhach.Designer.cs">
-      <DependentUpon>UC_MenuChoKhach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User_Controls\UC_MenuQL.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User_Controls\UC_MenuQL.Designer.cs">
-      <DependentUpon>UC_MenuQL.cs</DependentUpon>
+    <Compile Include="User_Controls\UC_BaoCao.Designer.cs">
+      <DependentUpon>UC_BaoCao.cs</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\UC_NhanVien.cs">
       <SubType>UserControl</SubType>
@@ -150,17 +144,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="User_Controls\UC_CaLamViecTrongNgay.resx">
-      <DependentUpon>UC_CaLamViecTrongNgay.cs</DependentUpon>
+    <EmbeddedResource Include="TrangChoNhanVien.resx">
+      <DependentUpon>TrangChoNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User_Controls\UC_KiemTraDatMon.resx">
-      <DependentUpon>UC_KiemTraDatMon.cs</DependentUpon>
+    <EmbeddedResource Include="TrangGioiThieu.resx">
+      <DependentUpon>TrangGioiThieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User_Controls\UC_MenuChoKhach.resx">
-      <DependentUpon>UC_MenuChoKhach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User_Controls\UC_MenuQL.resx">
-      <DependentUpon>UC_MenuQL.cs</DependentUpon>
+    <EmbeddedResource Include="User_Controls\UC_BaoCao.resx">
+      <DependentUpon>UC_BaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\UC_NhanVien.resx">
       <DependentUpon>UC_NhanVien.cs</DependentUpon>
@@ -194,6 +185,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\door-key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logocafe.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

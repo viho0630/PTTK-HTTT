@@ -98,6 +98,7 @@ namespace QLQuanCafe.User_Controls
          // 
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+         this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
          this.Controls.Add(this.btnXoa);
          this.Controls.Add(this.dateTimePicker1);
          this.Controls.Add(this.thoiGianBD);

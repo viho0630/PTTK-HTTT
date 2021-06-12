@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace QLQuanCafe.User_Controls
 {
-   public partial class UC_CaLamViecTrongNgay : UserControl
+   public partial class UC_BaoCao : UserControl
    {
-      public UC_CaLamViecTrongNgay()
+      public UC_BaoCao()
       {
          InitializeComponent();
       }

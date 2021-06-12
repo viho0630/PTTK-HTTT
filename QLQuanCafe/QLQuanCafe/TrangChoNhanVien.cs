@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QLQuanCafe.User_Controls
+namespace QLQuanCafe
 {
-   public partial class UC_MenuQL : UserControl
+   public partial class TrangChoNhanVien : Form
    {
-      public UC_MenuQL()
+      public TrangChoNhanVien()
       {
          InitializeComponent();
       }

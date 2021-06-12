@@ -51,11 +51,11 @@ namespace QLQuanCafe
             }
             catch (Exception)
             {
-                lbtb.Text = "Lưu thất bại";
+                //lbtb.Text = "Lưu thất bại";
             }
             if(kq == 1)
             {
-                lbtb.Text = "Lưu thành công!";
+                //lbtb.Text = "Lưu thành công!";
             }
         }
 
