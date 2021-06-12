@@ -54,6 +54,7 @@ E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.exe
 E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.pdb
 E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.DangNhap.resources
 E:\qlquancafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_ThemNVLamViec.resources
+<<<<<<< HEAD
 E:\dang_lam\QLQuanCafe\QLQuanCafe\bin\Debug\QLQuanCafe.exe
 E:\dang_lam\QLQuanCafe\QLQuanCafe\bin\Debug\QLQuanCafe.pdb
 E:\dang_lam\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.DangNhap.resources
@@ -75,3 +76,28 @@ E:\dang_lam\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.TrangGioiThieu.resources
 E:\dang_lam\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_BaoCao.resources
 E:\dang_lam\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.TrangChoNhanVien.resources
 E:\dang_lam\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.AssemblyReference.cache
+=======
+D:\Github\QLQuanCafe\QLQuanCafe\bin\Debug\QLQuanCafe.exe
+D:\Github\QLQuanCafe\QLQuanCafe\bin\Debug\QLQuanCafe.pdb
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.AssemblyReference.cache
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.DangNhap.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.frmKetNoi.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.Login.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.Main.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.Properties.Resources.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_CaLamViecTrongNgay.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_KiemTraDatMon.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_MenuChoKhach.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_MenuQL.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_NhanVien.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_ThemNVLamViec.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAnXacNhan.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_ThemSuaMon.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAn.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_TheMonAnNho.resources
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.GenerateResource.cache
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.CoreCompileInputs.cache
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.exe
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.pdb
+D:\Github\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_DoiMatKhau.resources
+>>>>>>> origin/son

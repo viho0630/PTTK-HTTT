@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLQuanCafe.User_Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,7 +39,7 @@ namespace QLQuanCafe
                             dr_taikhoan["MatKhau"].ToString().Equals(txtMatKhau.Text))
                         {
                             kiemtra = true;
-                            //CT_Main.quyenhan = dr_taikhoan["MaNV"].ToString().Trim();
+                            UC_DoiMatKhau.manv = dr_taikhoan["MaNV"].ToString().Trim();
                             break;
                         }
                         else

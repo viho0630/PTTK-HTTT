@@ -27,5 +27,26 @@ namespace QLQuanCafe
         {
             Application.Exit();
         }
+
+        private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            User_Controls.UC_NhanVien nv = new User_Controls.UC_NhanVien();
+            pnLoad.Controls.Clear();
+            pnLoad.Controls.Add(nv);
+        }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            User_Controls.UC_DoiMatKhau nv = new User_Controls.UC_DoiMatKhau();
+            pnLoad.Controls.Clear();
+            pnLoad.Controls.Add(nv);
+        }
+
+        private void mónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            User_Controls.UC_ThemSuaMon nv = new User_Controls.UC_ThemSuaMon();
+            pnLoad.Controls.Clear();
+            pnLoad.Controls.Add(nv);
+        }
     }
 }

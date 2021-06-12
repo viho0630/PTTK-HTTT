@@ -71,32 +71,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TrangChoChuQuan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrangChoChuQuan.Designer.cs">
-      <DependentUpon>TrangChoChuQuan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrangChoNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrangChoNhanVien.Designer.cs">
-      <DependentUpon>TrangChoNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrangGioiThieu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrangGioiThieu.Designer.cs">
-      <DependentUpon>TrangGioiThieu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User_Controls\UC_BaoCao.cs">
+    <Compile Include="User_Controls\UC_CaLamViecTrongNgay.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User_Controls\UC_BaoCao.Designer.cs">
-      <DependentUpon>UC_BaoCao.cs</DependentUpon>
+    <Compile Include="User_Controls\UC_CaLamViecTrongNgay.Designer.cs">
+      <DependentUpon>UC_CaLamViecTrongNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\UC_DoiMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\UC_DoiMatKhau.Designer.cs">
+      <DependentUpon>UC_DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\UC_KiemTraDatMon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\UC_KiemTraDatMon.Designer.cs">
+      <DependentUpon>UC_KiemTraDatMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\UC_MenuChoKhach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\UC_MenuChoKhach.Designer.cs">
+      <DependentUpon>UC_MenuChoKhach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\UC_MenuQL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\UC_MenuQL.Designer.cs">
+      <DependentUpon>UC_MenuQL.cs</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\UC_NhanVien.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\UC_NhanVien.Designer.cs">
+      <DependentUpon>UC_NhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="User_Controls\UC_ThemNVLamViec.cs">
       <SubType>UserControl</SubType>
@@ -150,17 +159,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TrangChoChuQuan.resx">
-      <DependentUpon>TrangChoChuQuan.cs</DependentUpon>
+    <EmbeddedResource Include="User_Controls\UC_CaLamViecTrongNgay.resx">
+      <DependentUpon>UC_CaLamViecTrongNgay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TrangChoNhanVien.resx">
-      <DependentUpon>TrangChoNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="User_Controls\UC_DoiMatKhau.resx">
+      <DependentUpon>UC_DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TrangGioiThieu.resx">
-      <DependentUpon>TrangGioiThieu.cs</DependentUpon>
+    <EmbeddedResource Include="User_Controls\UC_KiemTraDatMon.resx">
+      <DependentUpon>UC_KiemTraDatMon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User_Controls\UC_BaoCao.resx">
-      <DependentUpon>UC_BaoCao.cs</DependentUpon>
+    <EmbeddedResource Include="User_Controls\UC_MenuChoKhach.resx">
+      <DependentUpon>UC_MenuChoKhach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\UC_MenuQL.resx">
+      <DependentUpon>UC_MenuQL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Controls\UC_NhanVien.resx">
       <DependentUpon>UC_NhanVien.cs</DependentUpon>
@@ -194,15 +206,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\door-key.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logocafe.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bell.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bell %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

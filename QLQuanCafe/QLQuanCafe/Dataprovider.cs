@@ -116,7 +116,7 @@ namespace QLQuanCafe
         }
 
         //Xoá dữ liệu trên 1 dòng
-        public static int Delete_Dong(string tenbang, string tencot, string idDel)
+        public static int Delete_Dong(string sql)
         {
             try
             {
@@ -124,8 +124,8 @@ namespace QLQuanCafe
                 if (conn.State == ConnectionState.Open)
                     conn.Close();
                 conn.Open();
-                SqlCommand del = new SqlCommand("DELETE FROM " + tenbang + " WHERE " + tencot + "=" + "'" + idDel + "'", conn);
-                del.ExecuteNonQuery();
+                SqlCommand del = new SqlCommand(sql, conn);
+                del.ExecuteScalar();
                 return 1;
             }
             catch (Exception)
