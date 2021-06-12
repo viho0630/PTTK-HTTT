@@ -74,3 +74,4 @@ E:\dang_lam\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.pdb
 E:\dang_lam\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.TrangGioiThieu.resources
 E:\dang_lam\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.User_Controls.UC_BaoCao.resources
 E:\dang_lam\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.TrangChoNhanVien.resources
+E:\dang_lam\QLQuanCafe\QLQuanCafe\obj\Debug\QLQuanCafe.csproj.AssemblyReference.cache
